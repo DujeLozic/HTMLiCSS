@@ -37,6 +37,10 @@ main > img {
     margin-top: 55px;
 }
 
+ul > img {
+    padding: 30px 80px 10px 80px;
+}
+
 footer {
     text-align: left;
 }
