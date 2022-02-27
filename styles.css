@@ -7,15 +7,14 @@ header > img {
     width: 300px;
     display: inline-block;
     margin: 50px 0 0 0;
-
 }
 
 header > h1 {
-    margin: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
 }
 
 nav {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 nav > a {
@@ -26,8 +25,30 @@ nav > a {
     border-radius: 7px;
     background-color: black;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(107, 127, 240);
 }
 
 main > img {
-    margin-top: 40px;
+    margin-top: 55px;
+}
+
+footer {
+    text-align: left;
+}
+
+.newsletter, .kontakt {
+    margin-top: -20px;
+}
+
+.prava {
+    text-align: center;
+}
+
+.autor {
+    text-align: right;
 }
