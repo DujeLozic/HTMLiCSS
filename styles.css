@@ -1,41 +1,50 @@
 body {
     font-family: 'Exo 2', sans-serif;
     text-align: center;
-    background-image: linear-gradient(white,rgb(197, 230, 252), rgb(145, 211, 255));
+    background-image: linear-gradient(white,rgb(239, 249, 255), #91d3ff);
     position: relative;
+    margin: 0px;
 }
 
 header > img {
-    width: 300px;
+    width: 190px;
     display: inline-block;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
-header > h1 {
-    margin: 20px 0 20px 0;
-}
-
-/* header {
-    position: fixed;
+header {
+    position: sticky;
     background-color: white;
     width: 100%;
+    top: 0px;
     margin-top: -10px;
-} */
+}
+
+header > div {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
 
 .linija {
-    margin-top: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav {
-    margin-top: 30px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 nav > a {
     color: white;
     padding: 6px 15px;
-    margin: 15px 15px;
+    margin: 15px 30px;
     border: 2px solid black;
-    border-radius: 7px;
+    border-radius: 20px;
     background-color: black;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -46,25 +55,34 @@ nav > a:hover {
     background-color: rgb(107, 127, 240);
 }
 
+#spec {
+    padding-top: 90px;
+}
+
 main > img {
-    margin-top: 55px;
+    margin-top: 80px;
+    max-height: 500px;
+    height: 100%;
 }
 
 .spec {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+
 section > div > h4 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
 }
+
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .razmak {
@@ -75,6 +93,15 @@ ul > img {
     padding: 30px 80px 10px 80px;
 }
 
+.proc, .zas, .mem, .bat {
+    padding: 10px 20px;
+    margin-left: -2px;
+    margin-top: -2px;
+    background-color: rgba(255, 255, 255, 0.411);
+    border: 2px dotted rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+}
+
 .tablica {
     margin-left: auto;
     margin-right: auto;
@@ -82,7 +109,7 @@ ul > img {
 
 .slicni, .specifikacije {
     padding-top: 70px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
 }
 
 .a72, .se, .pet {
@@ -105,6 +132,7 @@ th > a {
 
 footer {
     text-align: left;
+    background-color: #8ad0ff;
 }
 
 .newsletter, .kontakt {
@@ -118,4 +146,5 @@ footer {
 .autor {
     text-align: right;
 }
+
 
