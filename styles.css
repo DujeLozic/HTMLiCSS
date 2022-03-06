@@ -18,6 +18,7 @@ header {
     width: 100%;
     top: 0px;
     margin-top: -10px;
+    z-index: 2;
 }
 
 header > div {
@@ -52,17 +53,16 @@ nav > a {
 
 nav > a:hover {
     color: rgb(0, 0, 0);
-    background-color: rgb(107, 127, 240);
+    background-color: rgb(128, 179, 236);
+}
+
+.a52s {
+    margin-top: 80px;
 }
 
 #spec {
     padding-top: 90px;
-}
-
-main > img {
-    margin-top: 80px;
-    max-height: 500px;
-    height: 100%;
+    margin-bottom: 50px;
 }
 
 .spec {
@@ -102,28 +102,25 @@ ul > img {
     border-radius: 10px;
 }
 
-.tablica {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .slicni, .specifikacije {
     padding-top: 70px;
     padding-bottom: 60px;
 }
 
-.a72, .se, .pet {
-    margin: 10px 50px;
+.slicni__mob {
     transition: transform 0.3s;
 }
 
-.a72:hover, .se:hover, .pet:hover {
-    margin: 10px 50px;
+.slicni__mob:hover{
     transform: scale(1.06);
 }
 
-th > a {
-    margin: 50px;
+.gridara {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 15px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
 }
 
 .cijene {
@@ -136,7 +133,32 @@ footer {
 }
 
 .newsletter, .kontakt {
-    margin-top: -20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.foot {
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.email {
+    border-radius: 10px;
+    border-color: black;
+    background-color: #d5eeff;
+}
+
+.potvrdi {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: black;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.potvrdi:hover {
+    color: rgb(0, 0, 0);
+    background-color: #8ad0ff;
 }
 
 .prava {
@@ -147,4 +169,12 @@ footer {
     text-align: right;
 }
 
+hr {
+    border-color: rgba(0, 0, 0, 0.575);
+}
 
+@media screen and (max-width: 360px) {
+    .a52s {
+        max-width:fit-content;
+    }
+}

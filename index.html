@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <img src="/samsung_logo.png" alt="samsung_logo">
+        <img src="/slike/samsung_logo.png" alt="samsung_logo">
 
         <div>
             <h1>Samsung Galaxy A52s 5G</h1>
@@ -34,16 +34,14 @@
 
     <main>
 
-        <img src="/mob.PNG" alt="samsung a52s 5g">
+        <img class="a52s" src="/slike/mob.PNG" alt="samsung a52s 5g">
 
         <h2 id="spec">Samsung Galaxy A52s 5G</h2>
-
-        <br>
-        <br>
 
         <h3 class="specifikacije">Specifikacije</h3>
 
         <section class="spec">
+
             <div class="proc">
                 <ul>
                     <h4>Procesor:</h4>
@@ -58,7 +56,7 @@
                         <span class="razmak">Osmojezgreni</span>
                     </li>
             </div>
-            </div>
+
             <div class="zas">
                 <ul>
                     <h4>Zaslon:</h4>
@@ -73,7 +71,7 @@
                         <span>1080 x 2400 (FHD+)</span>
                     </li>
             </div>
-            </div>
+
             <div class="mem">
                 <ul>
                     <h4>Memorija:</h4>
@@ -88,8 +86,7 @@
                         <span>128</span>
                     </li>
             </div>
-            </div>
-            </div>
+
             <div class="bat">
                 <ul>
                     <h4>Baterija:</h4>
@@ -104,56 +101,32 @@
                         <span>Ne</span>
                     </li>
                 </ul>
-
             </div>
 
-
         </section>
-
-        <br>
-        <br>
 
         <section>
             <h3 class="slicni">Slični uređaji</h3>
 
-            <table class="tablica">
-                <thead>
-                    <tr>
-                        <th>
-                            <a href="https://www.samsung.com/hr/smartphones/galaxy-a/galaxy-a72-awesome-black-128gb-sm-a725fzkdeue/"
-                                target="_blank" rel="noopener noreferrer">
-                                <img class="a72" src="/a72.png" alt="samsung a72" height="200">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="https://www.apple.com/iphone-se/" target="_blank" rel="noopener noreferrer">
-                                <img class="se" src="/iphone.png" alt="iphone se" height="200">
-                            </a>
-                        </th>
-                        <th>
-                            <a href="https://store.google.com/us/product/pixel_5a_5g?hl=en-US" target="_blank"
-                                rel="noopener noreferrer">
-                                <img class="pet" src="/pixel.png" alt="pixel 5a" height="200">
-                            </a>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Samsung Galaxy A72</td>
-                        <td>Iphone SE</td>
-                        <td>Pixel 5a</td>
-                    </tr>
-                    <tr class="cijene">
-                        <td>2.000,00 kn</td>
-                        <td>2.700,00 kn</td>
-                        <td>1.900,00 kn</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <br>
-            <br>
+            <div class="gridara">
+                <a href="https://www.samsung.com/hr/smartphones/galaxy-a/galaxy-a72-awesome-black-128gb-sm-a725fzkdeue/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="slicni__mob" src="/slike/a72.png" alt="samsung a72" height="200">
+                </a>
+                <a href="https://www.apple.com/iphone-se/" target="_blank" rel="noopener noreferrer">
+                    <img class="slicni__mob" src="/slike/iphone.png" alt="iphone se" height="200">
+                </a>
+                <a href="https://store.google.com/us/product/pixel_5a_5g?hl=en-US" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="slicni__mob" src="/slike/pixel.png" alt="pixel 5a" height="200">
+                </a>
+                <span>Samsung Galaxy A72</span>
+                <span>Iphone SE</span>
+                <span>Pixel 5a</span>
+                <span class="cijene">2.000,00 kn</span>
+                <span class="cijene">2.700,00 kn</span>
+                <span class="cijene">1.900,00 kn</span>
+            </div>
 
         </section>
 
@@ -163,20 +136,20 @@
 
         <hr>
 
-        <h4>Newsletter</h4>
+        <form class="newsletter">
+            <h4>Newsletter</h4>
 
-        <form>
-            <div class="newsletter">
+            <div class="foot">
                 <label for="email">Za prijaviti se na newsletter upiši email:</label>
-                <input type="text" email="email" placeholder="email...">
-                <button type="submit">Potvrdi</button>
+                <input class="email" type="text" email="email" placeholder="email...">
+                <button class="potvrdi" type="submit">Potvrdi</button>
             </div>
         </form>
 
-        <address>
+        <address class="kontakt">
             <h4>Kontakt:</h4>
 
-            <div class="kontakt">
+            <div class="foot">
                 <a href="email:mojmail@mail.hr">mojmail@mail.hr</a>
                 <a href="tel.:+123456789">(385)456789</a>
             </div>
