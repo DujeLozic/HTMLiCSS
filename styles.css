@@ -26,7 +26,7 @@ header > div {
     margin-bottom: -15px;
 }
 
-.linija {
+.line {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -93,7 +93,7 @@ ul > img {
     padding: 30px 80px 10px 80px;
 }
 
-.proc, .zas, .mem, .bat {
+.spec__parts {
     padding: 10px 20px;
     margin-left: -2px;
     margin-top: -2px;
@@ -102,7 +102,7 @@ ul > img {
     border-radius: 10px;
 }
 
-.slicni, .specifikacije {
+.slicni__title, .specifikacije {
     padding-top: 70px;
     padding-bottom: 60px;
 }
@@ -115,15 +115,21 @@ ul > img {
     transform: scale(1.06);
 }
 
-.gridara {
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
-    gap: 15px;
-    margin-bottom: 100px;
+.slicni {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
-.cijene {
+.slicni__mob, .price{
+    display: block;
+    margin: 10px 0;
+}
+
+.price {
     color: rgb(184, 0, 0);
 }
 
@@ -171,10 +177,4 @@ footer {
 
 hr {
     border-color: rgba(0, 0, 0, 0.575);
-}
-
-@media screen and (max-width: 360px) {
-    .a52s {
-        max-width:fit-content;
-    }
 }
